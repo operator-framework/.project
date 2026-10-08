@@ -7,22 +7,45 @@
 schema_version: "1.0.0"
 slug: "operator-framework"
 name: "Operator Framework"
-description: "SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding"
+description: "An open source toolkit to manage Kubernetes native applications, called Operators in an effective, automated, and scalable way. Provides managing controllers and developer tooling"
 type: "project"
-project_lead: "joelanford" # TODO: AUTO-DETECTED — please verify
-slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+project_lead: "joelanford"
+slack_channels:
   - name: "#olm-dev"
+    workspace: "kubernetes"
     primary: true
   - name: "#operator-sdk-dev"
+    workspace: "kubernetes"
+  - name: "#olm-dev"
+    workspace: "cncf"
+  - name: "#operator-framework-community"
+    workspace: "kubernetes"
 
 maturity_log:
   - phase: "incubating"
     date: "2020-07-09T00:00:00Z"
-    issue: "https://github.com/cncf/sandbox/issues/279" # TODO: AUTO-DETECTED — please verify
+    issue: "https://github.com/cncf/sandbox/issues/279"
 
-repositories: # TODO: AUTO-DETECTED primary — please verify
-  - url: "https://github.com/operator-framework/operator-sdk"
+repositories:
+  - url: "https://github.com/operator-framework/operator-lifecycle-manager"
     primary: true
+    tags: [on-cluster, olmv0]
+  - url: "https://github.com/operator-framework/api"
+    tags: [on-cluster, api, olmv0]
+  - url: "https://github.com/operator-framework/operator-registry"
+    tags: [on-cluster, registry, catalogs, fbc]
+  - url: "https://github.com/operator-framework/olm-docs"
+    tags: [documentation, docs]
+  - url: "https://github.com/operator-framework/operator-sdk"
+    tags: [developer, sdk]
+  - url: "https://github.com/operator-framework/operator-controller"
+    tags: [on-cluster, olmv1]
+  - url: "https://github.com/operator-framework/java-operator-sdk"
+    tags: [developer, sdk]
+  - url: "https://github.com/operator-framework/josdk-spring-boot-starter"
+    tags: [developer, sdk]
+  - url: "https://github.com/operator-framework/josdk-webhooks"
+    tags: [developer, sdk]
     # tags: [core, sig-apps] # Optional
 
 website: "https://operatorframework.io/"
@@ -37,32 +60,33 @@ artwork: "https://landscape.cncf.io/logos/operator-framework.svg"
 # TODO: Add package manager identifiers if your project is distributed via registries
 # package_managers:
 #   docker: "operator-framework/operator-sdk"
+#   TODO: once we nail down the canonical repos here we can add the images they use
 
 
-security:
-  policy:
-    path: "https://github.com/operator-framework/operator-sdk/blob/master/SECURITY.md"
-  contact:
-    advisory_url: "https://github.com/operator-framework/operator-sdk/security/advisories/new"
+#security:
+#  policy:
+#    path: "https://github.com/operator-framework/community/blob/master/SECURITY.md"
+#  contact:
+#    advisory_url: "https://github.com/operator-framework/operator-sdk/security/advisories/new"
 
 governance:
   contributing:
-    path: "https://github.com/operator-framework/operator-sdk/blob/master/CONTRIBUTING.MD"
+    path: "https://github.com/operator-framework/community/blob/master/contributor-ladder.md"
   code_of_conduct:
-    path: "https://github.com/operator-framework/operator-sdk/blob/master/code-of-conduct.md"
+    path: "https://github.com/operator-framework/community/blob/master/code-of-conduct.md"
 
 legal:
   license:
-    path: "https://github.com/operator-framework/operator-sdk/blob/master/LICENSE"
+    path: "https://github.com/operator-framework/community/blob/master/LICENSE"
   identity_type:
-    has_dco: true # AUTO-DETECTED — please verify
-    has_cla: false # AUTO-DETECTED — please verify
+    has_dco: true
+    has_cla: false
     dco_url:
       path: "https://developercertificate.org/"
 
 documentation:
   readme:
-    path: "https://github.com/operator-framework/operator-sdk/blob/master/README.md"
+    path: "https://github.com/operator-framework/community/blob/master/README.md"
 
 landscape:
   category: "App Definition and Development"

@@ -11,17 +11,9 @@ maintainers:
         members:
           - joelanford
           - acornett21
-          - theishshah
-          - jberkhahn
-          - fabianvf
-          - varshaprasad96
           - rashmigottipati
-          - everettraven
-          - oceanc80
           - csviri
           - metacosm
-          - andreaTP
-          - anik120
           - dtfranz
           - grokspawn
           - kevinrizza
@@ -29,10 +21,7 @@ maintainers:
           - tmshort
           - ankitathomas
           - camilamacedo86
-          - bentito
           - OchiengEd
-          - thetechnick
-          - pedjak
           - trgeiger
       # Unmanaged teams: teams with "managed: false" are tracked in this
       # file for documentation but are excluded from CNCF resource
