@@ -50,7 +50,7 @@ repositories:
 
 website: "https://operatorframework.io/"
 
-artwork: "https://landscape.cncf.io/logos/operator-framework.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/operatorframework"
 
 # TODO: Add ADOPTERS.md if your project tracks adopters
 # adopters:
